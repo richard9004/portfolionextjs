@@ -1,0 +1,217 @@
+.container_resume {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.designation {
+  font-size: 18px;
+  color: #999;
+}
+
+.contact-more {
+  font-size: 14px;
+}
+
+.email,
+.website,
+.linkedin,
+.phone {
+  margin-bottom: 5px;
+}
+
+/* Styling for different contact information */
+
+.email:before {
+  content: "Email: ";
+  font-weight: bold;
+}
+
+.website:before {
+  content: "Website: ";
+  font-weight: bold;
+}
+
+.linkedin:before {
+  content: "LinkedIn: ";
+  font-weight: bold;
+}
+
+.phone:before {
+  content: "Phone: ";
+  font-weight: bold;
+}
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+}
+
+.designation {
+  font-size: 18px;
+  color: #999;
+  font-family: "Arial", sans-serif;
+}
+
+.contact-more {
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+}
+
+.email,
+.website,
+.linkedin,
+.phone {
+  margin-bottom: 5px;
+  font-family: "Arial", sans-serif;
+}
+
+.email i,
+.website i,
+.linkedin i,
+.phone i {
+  margin-right: 5px;
+}
+
+.email a,
+.website a,
+.linkedin a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.email a:hover,
+.website a:hover,
+.linkedin a:hover {
+  text-decoration: underline;
+}
+
+
+.job {
+  margin-bottom: 20px;
+}
+
+.header1 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.header2 {
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+#resume-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#resume-footer p {
+  margin: 0;
+}
+
+#resume-footer .name {
+  flex-grow: 1;
+}
+
+#resume-footer .website,
+#resume-footer .portfolio {
+  margin: 0 10px;
+}
+
+#resume-footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+#resume-footer i {
+  margin-right: 5px;
+}
+
+.mt-top{
+  margin-top: 10px;
+}
+
+.header3 {
+  font-size: 15px;
+  color: #999;
+  margin-bottom: 0px;
+}
+
+.para {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  border-radius: 5px;
+}
+
+.para span {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.para span:before {
+  content: "|";
+  margin-right: 5px;
+}
+
+.para span:last-child:before {
+  content: "";
+  margin-right: 0;
+}
+.para span:first-child:before {
+  content: "";
+  margin-right: 0;
+}
+
+.mu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.talent_z {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.talent_z li {
+  color: #333;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;/*
+  padding: 10px;*/
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.talent_z li.last {
+  margin-bottom: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.download-btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-btn i {
+  margin-right: 5px;
+}

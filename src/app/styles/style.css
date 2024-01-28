@@ -1,0 +1,262 @@
+
+body {
+  margin: 0;
+  background-color: #434343;
+  padding: 0;
+  min-height: 100vh;
+}
+
+header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+h1 {
+    color: #fff;
+    margin: 5px;
+    padding: 0px;
+    width:500px;
+}
+
+.header {
+    width: 100%;
+  
+     background: #000000;
+      background: -webkit-linear-gradient(to bottom, #434343, #000000);
+      background: linear-gradient(to bottom, #434343, #000000);
+}
+
+/*.container {
+    margin: 10px auto;
+    max-width: 1200px;
+    padding: 10px;
+}*/
+.container {
+  flex: 1;
+  margin: 10px auto;
+  max-width: 1200px;
+  padding: 10px;
+ /* min-height: calc(100vh - 60px);*/ /* Adjust the value (60px) based on your footer's height */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* --- Hamburger Functionality --- */
+
+div.menu-link {
+    padding: 1em;
+    color: #fff;
+}
+
+/* When screen is small, center content and animate transitions. */
+nav[role=navigation] {
+    clear: both;
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    width: 100%;
+    margin: 0px 0px 0px -50px;
+}
+
+/* Positioning when nav does appear in small screen mode */
+nav[role=navigation].open {
+    max-height: 15em;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+/* When in small screen, center the list */
+nav[role=navigation] ul {
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav[role=navigation] li a {
+    display: block;
+    padding: 0.8em;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Style for larger screens. Hide the menu button, and show the normal navigation menu. */
+/* Credit: https://codepen.io/bradfrost/pen/sHvaz */
+@media screen and (min-width: 35em) {
+    div.menu-link {
+        display: none;
+    }
+
+    nav[role=navigation] {
+        max-height: none;
+        margin: 0px;
+    }
+
+    nav[role=navigation] ul {
+        margin: 0 0 0 -0.25em;
+        border: 0;
+        text-align: right;
+    }
+
+    nav[role=navigation] li {
+        display: inline-block;
+        margin: 0 0.25em;
+    }
+
+    nav[role=navigation] li a {
+        border: 0;
+    }
+}
+
+/* --- Hamburger Appearance & Animation --- */
+/* Cred*/
+div.menu-link {
+  width: 30px;
+  top: 100px;
+  left: 120px;
+  transition-duration: 0.5s;
+}
+div.menu-link .icon {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  top: 20px;
+  background-color: #efefef;
+}
+div.menu-link .icon:before {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #efefef;
+  content: "";
+  top: -10px;
+}
+div.menu-link .icon:after {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #efefef;
+  content: "";
+  top: 10px;
+
+}
+div.menu-link.open .icon {
+  transition-duration: 0.5s;
+  background: transparent;
+}
+div.menu-link.open .icon:before {
+  transform: rotateZ(45deg) scaleX(1.25) translate(6.5px, 6.5px);
+}
+div.menu-link.open .icon:after {
+  transform: rotateZ(-45deg) scaleX(1.25) translate(6px, -6px);
+}
+div.menu-link:hover {
+  cursor: pointer;
+}
+
+
+
+footer {
+  background: #000000;
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);
+  background: linear-gradient(to bottom, #434343, #000000);
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+    .footer-section {
+      flex-basis: 25%;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 10px;
+    }
+
+    .social-media-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .social-media-links li {
+      margin-bottom: 5px;
+    }
+
+    .social-media-links li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .profile-card {
+ 
+}
+
+.profile-header {
+  text-align: center;
+}
+
+.profile-picture {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-content {
+  text-align: center;
+}
+
+.profile-name {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.profile-job {
+  font-size: 18px;
+  color: #777777;
+  margin-bottom: 20px;
+}
+
+.socialcard-media-links {
+  display: flex;
+  justify-content: center;
+}
+
+.socialcard-link {
+  color: #777777;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.socialcard-link:hover {
+  color: #333333;
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.made-by-next-js {
+  margin-top: 1rem;
+  font-weight: bold;
+}

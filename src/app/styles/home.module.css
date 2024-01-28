@@ -1,0 +1,100 @@
+.header_1{
+  color:black !important;
+}
+.container {
+  margin: 10px auto;
+  max-width: 1200px;
+  padding: 10px;
+  display: flex;
+  font-size: 18px; /* Adjust the font size as per your preference */
+  line-height: 1.5; /* Adjust the line height as per your preference */
+  color: #000000; /* Set the desired text color */
+}
+.leftSection {
+  flex: 0 0 300px; /* Set a fixed width for the left section */
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start; /* Prevent the left section from stretching */
+  color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.leftSection .profilePic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.leftSection .profilePic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.leftSection .jobTitle {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.leftSection .description {
+  margin-top: 0px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.leftSection .socialIcons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.leftSection .socialIcons .socialIcon {
+  margin-right: 10px;
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+
+.rightSection {
+  flex-grow: 1; /* Add flex-grow */
+  background-color: white;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+  .link {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .rightSection {
+    margin-left: 0;
+  }
+}

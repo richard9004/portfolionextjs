@@ -1,0 +1,51 @@
+.container {
+ 
+   display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  
+}
+
+    .card {
+      width: 400px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .card form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .card label {
+      margin-bottom: 10px;
+    }
+    
+    .card input,
+    .card textarea {
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+    }
+    
+    .card button {
+      padding: 10px 16px;
+      background-color: #4caf50;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .card button:hover {
+      background-color: #45a049;
+    }
